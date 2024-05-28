@@ -17,8 +17,9 @@ public class RequestGet {
 //            .header("accept", "application/json");
         request.accept("application/json");
 
-        Response response = request.when().get();
-        response.prettyPrint();
+//        Response response = request.when().get();
+//        response.prettyPrint();
+        request.when().get().prettyPrint();
     }
 
     @Test
