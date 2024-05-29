@@ -29,7 +29,6 @@ public class DemoPOJO {
     }
 
     public DemoPOJO(){
-
     }
 
     public DemoPOJO(String username, String password) {
