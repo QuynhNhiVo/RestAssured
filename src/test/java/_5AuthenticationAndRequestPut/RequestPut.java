@@ -1,6 +1,5 @@
 package _5AuthenticationAndRequestPut;
 
-import _4POJO.DemoPOJO;
 import com.google.gson.Gson;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -15,7 +14,7 @@ public class RequestPut {
 
     @BeforeMethod
     public void loginGetToken(){
-        POJO_RequestPut login = new POJO_RequestPut("anhtester", "Demo@123");
+        POJO_Request login = new POJO_Request("anhtester", "Demo@123");
         Gson gson = new Gson();
         RequestSpecification request = given();
         request.baseUri("https://api.anhtester.com/api")
@@ -33,7 +32,7 @@ public class RequestPut {
 
     @Test
     public void requestPut(){
-        POJO_RequestPut update = new POJO_RequestPut("TJas",
+        POJO_Request update = new POJO_Request("TJas",
                                                         "Jasmine",
                                                         "Brow",
                                                         "jsm2@gmail.com",

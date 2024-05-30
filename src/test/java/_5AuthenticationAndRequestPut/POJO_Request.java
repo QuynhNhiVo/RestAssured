@@ -1,6 +1,7 @@
 package _5AuthenticationAndRequestPut;
 
-public class POJO_RequestPut {   private String username;
+public class POJO_Request {   private String username;
+
     private String firstName;
     private String lastName;
     private String email;
@@ -8,17 +9,25 @@ public class POJO_RequestPut {   private String username;
     private String phone;
     private int userStatus;
 
-    public POJO_RequestPut(String username, String password) {
+    public POJO_Request(String username, String password) {
         this.username = username;
         this.password = password;
     }
 
-    public POJO_RequestPut(String username, String firstName, String lastName, String email, String password, String phone, int userStatus) {
+    public POJO_Request(String username, String firstName, String lastName, String email, String password, String phone, int userStatus) {
         this.username = username;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.password = password;
+        this.phone = phone;
+        this.userStatus = userStatus;
+    }
+
+    public POJO_Request(String firstName, String lastName, String email, String phone, int userStatus) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
         this.phone = phone;
         this.userStatus = userStatus;
     }
