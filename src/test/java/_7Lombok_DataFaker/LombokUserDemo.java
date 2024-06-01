@@ -1,4 +1,4 @@
-package _7Lombok;
+package _7Lombok_DataFaker;
 
 import com.google.gson.Gson;
 import common.BaseTest;
