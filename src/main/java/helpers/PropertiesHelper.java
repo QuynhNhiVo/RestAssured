@@ -12,12 +12,12 @@ public class PropertiesHelper {
     private static String linkFile;
     private static FileInputStream file;
     private static FileOutputStream out;
-    private static String relPropertiesFilePathDefault = "src/test/resources/config/configs.properties";
+    private static String relPropertiesFilePathDefault = "src/test/resources/configs/config.properties";
 
 //    loadAllFiles() để khởi tạo giá trị cho nhiều file properties setup sẵn trong hàm
     public static Properties loadAllFiles() {
         LinkedList<String> files = new LinkedList<>();
-        files.add("src/test/resources/config/configs.properties");
+        files.add("src/test/resources/configs/config.properties");
         try {
             properties = new Properties();
 
