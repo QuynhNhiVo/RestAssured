@@ -1,4 +1,4 @@
-package common;
+package _9CommonClassDemo;
 
 import _5AuthenticationAndRequestPut.POJO_Request;
 import com.google.gson.Gson;
@@ -12,7 +12,7 @@ import org.testng.annotations.BeforeSuite;
 
 import static io.restassured.RestAssured.given;
 
-public class BaseTest {
+public class BaseTestDemo {
 
     @BeforeSuite
     public void setupSuite(){
