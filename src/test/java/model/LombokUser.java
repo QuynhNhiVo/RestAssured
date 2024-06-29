@@ -1,17 +1,18 @@
 package model;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 
-@Data
 @AllArgsConstructor
+@Data
+@Builder
 public class LombokUser {
-
-    private final String username;
-    private final String firstName;
-    private final String lastName;
+    private String username;
+    private String firstName;
+    private String lastName;
     private String email;
-    private final String password;
+    private String password;
     private String phone;
     private int userStatus;
 }
