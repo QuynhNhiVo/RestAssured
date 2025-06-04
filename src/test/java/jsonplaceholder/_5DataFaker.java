@@ -2,15 +2,17 @@ package jsonplaceholder;
 
 import io.restassured.RestAssured;
 import jsonplaceholder.data.DemoPojo;
+import net.datafaker.Faker;
 import org.testng.annotations.Test;
 
-public class _4PojoClass {
+public class _5DataFaker {
     @Test
-    public void pojoTest(){
+    public void dataFakerTest(){
+        Faker faker = new Faker();
         DemoPojo pojo = DemoPojo.builder()
-                .title("POJO")
-                .body("This is created using Lombok and POJO")
-                .userId(7)
+                .title(faker.book().title())
+                .body(faker.lorem().paragraph())
+                .userId(faker.number().numberBetween(1, 100))
                 .build();
         RestAssured.given()
                 .header("Content-Type", "application/json")
@@ -20,5 +22,6 @@ public class _4PojoClass {
                 .then()
                 .statusCode(201)
                 .log().body();
+
     }
 }

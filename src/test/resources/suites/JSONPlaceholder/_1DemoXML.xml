@@ -1,0 +1,13 @@
+<!-- testng.xml -->
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="API Automation Suite" verbose="1">
+    <test name="Demo Rest Assure">
+        <classes>
+            <class name="jsonplaceholder._1RestAssureDemo">
+                    <methods>
+                        <exclude name="testUpdatePost"/>
+                    </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,11 @@
+<!-- testng.xml -->
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="API Automation Suite" verbose="1" parallel="classes">
+    <test name="Assert Test">
+        <classes>
+            <class name="jsonplaceholder._3DataTest"/>
+            <class name="jsonplaceholder._5DataFaker"/>
+            <class name="jsonplaceholder._4PojoClass"/>
+        </classes>
+    </test>
+</suite>
